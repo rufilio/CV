@@ -15,10 +15,10 @@ const hero = `
             <div class="text">
                     <div class="content-tex">
                         <div class="logo">
-                            <img src="/assets/images/lgo.png" alt="logo">
+                            <img src="lgo.png" alt="logo">
                         </div>
                         <span>Hello, I'm <strong>Alex</strong></span>
-                        <p>Programador y Desarrollador Web <br> apasionado por el diseño.</p>
+                        <p>Programador y Desarrollador Web  apasionado por el diseño.</p>
                         <div class="buttons">
                             <a href="#" class="btn">Download CV</a>
                         </div>
@@ -27,7 +27,7 @@ const hero = `
                 </div>
                 <div class="redes">
                     <div class="item">
-                       <a href="#"><i class='bx bxl-github'></i></a>
+                       <a href="https://github.com/"><i class='bx bxl-github'></i></a>
                     </div>
                     <div class="item">
                         <a href="#"><i class='bx bxl-instagram-alt'></i></a>
@@ -189,6 +189,9 @@ const skills = `
                           <div class="juegos_DWG">
                             <a href=""><i class='bx bxl-git'></i></a>
                           </div>
+                           <div class="juegos_DWG">
+                            <a href=""><i class='bx bxl-nodejs'></i></a>
+                          </div>
                         </div>
                       </div>
                 </div>
@@ -197,5 +200,6 @@ const skills = `
 document.getElementById('skills').innerHTML += skills
 
 let slider = document.querySelector(".slier-prin");
-
 slider.innerHTML += slider.innerHTML;
+
+

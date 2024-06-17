@@ -31,10 +31,11 @@ body{
 }
 
 header{
-    position: fixed;
+
     background-color: #333333;
     width: 100%;
     height: 65px;
+    z-index: 10000;
 }
 .nav-content{
     display: flex;
@@ -63,7 +64,6 @@ main{
     place-items: center;
 }
 .container-center{
-
     width: 1090px;
     height: 100%;
 }
@@ -280,7 +280,6 @@ main{
 
 
 .about-container{
-
     width: 100%;
     height: 100%;
     display: grid;
@@ -323,21 +322,76 @@ main{
 
 
 
-.pie-pagina {
-    width: 100%;
-    bottom: 0;
-    position: relative;
-    margin-top: 800px;
+
+
+
+
+
+
+
+
+
+  @media (max-width: 1280px) {
+    
   }
   
-  .pie-pagina .grupo-2 {
-    border-top: 2px solid var(--color-primary);
-    background-color: #fff;
-    padding: 15px 10px;
-    text-align: center;
-    color: var(--color-secondary);
+  @media (max-width: 1024px) {
+    .content-items{
+        padding: 20px;
+    }
   }
-  
-  .pie-pagina .grupo-2 small {
-    font-size: 15px;
+
+  @media (max-width: 900px) {
+    header{
+        width: 100%;
+    }
+    main{
+        width: 100%;
+    }
+    .container-center{
+        width: 100%;
+    }
+    .hero{
+        display: block;
+        width: 100%;
+        height: 30%;
+    }
+    .hero .content-tex{
+        width: 400px;
+        text-align: center;
+    }
+    #locacion{
+        display: grid;
+        place-content: center;
+    }
+    .redes{
+        height: fit-content;
+        width: 100%;
+        flex-direction: row;
+    }
+    .proyects{
+        margin-top: 50px;
+    }
+    .proyects .content-items{
+        padding-top: 90px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .skills{
+        padding-top: 70px;
+    }
+
+    .about-container{
+        width: 100%;
+    }
+    .img-about{
+        display: none;
+    }
+    .text-about{
+        padding: 30px;
+        width: 420px;
+    }
+    .buttons{
+        padding: 30px; 
+    }
   }
