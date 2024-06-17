@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: "Dosis", sans-serif;
+    scroll-behavior: smooth;
+}
+
+:root{
+    --color-text-black: #333333;
+    --color-text-white: #FFFFFFFF;
+
+
+
+    --back-color-black: #33333333;
+    --back-color-white-oscuro: #f8f9fa;
+    --back-color-white: #FFFFFFFF;
+
+
+    --color-verde-claro: #dde5b6;
+    --color-verde-oscuro: #adc178;
+    --color-marron-claro: #a98467;
+    --color-marron-oscuro: #6c584c;
+}
+
+body{
+    background-color: var(--back-color-white-oscuro);
+}
+
+header{
+    position: fixed;
+    background-color: #333333;
+    width: 100%;
+    height: 65px;
+}
+.nav-content{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+}
+.nav-content ul{
+    display: flex;
+    gap: 20px;
+}
+.nav-links{
+    color: var(--back-color-white);
+    transition: all ease-in-out .5s;
+}
+.nav-links:hover{
+    color: var(--color-verde-oscuro);
+}
+
+
+
+main{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+.container-center{
+
+    width: 1090px;
+    height: 100%;
+}
+.hero{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero .text{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.text .content-tex img{
+    width: 180px;
+}
+.content-tex{
+    padding: 30px;
+}
+.content-tex span{
+    font-size: 1em;
+}
+.content-tex strong{
+    color: var(--color-verde-oscuro);
+}
+.content-tex p{
+    font-size: 30px;
+}
+.buttons{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.buttons .btn{
+    border: solid 2px var(--color-verde-claro);
+    border-radius: 6px;
+    padding: 5px 10px 5px 10px;
+    font-size: 14px;
+    transition: all ease-in-out .5s;
+    color: var(--color-text-black);
+}
+.btn:hover{
+    border-style: dashed;
+}
+.content-tex #locacion{
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+#locacion div{
+    background-color: var(--color-verde-oscuro);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    animation: luz linear infinite 1s;
+}
+
+@keyframes luz {
+    0%{
+        opacity: .5;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.redes{
+    width: 5%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 13px;
+}
+.redes .item{
+    width: 50px;
+    height: 50px;
+    border-radius: 16px;
+    display: grid;
+    place-content: center;
+    align-items: center;
+    transition: all ease-in-out .5s;
+}
+.item a{
+    font-size: 1.9em;
+    color: var(--color-verde-oscuro);
+}
+.item:hover{
+   background-color: var(--back-color-white);
+   border: solid 1px #e7e7e7;
+}
+
+
+
+
+.proyects{
+    width: 100%;
+    height: 50%;
+}
+ .tile{
+    width: 100%;
+    text-align: center;
+    color: var(--color-text-black);
+}
+.proyects .content-items{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-content: center;
+    gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+}
+.content-items .items-container{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    transition: all ease-in-out .5s;
+}
+.items-container .img{
+    background-color: #a98467;
+    width: 50%;
+    height: 100%;
+}
+.items-container .img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.items-container .text{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+}
+.items-container .text .title{
+    color: var(--color-text-black);
+    font-size: 20px;
+}
+.items-container .text p{
+    font-size: 14px;
+    color: var(--color-text-black);
+}
+.items-container .text .links a{
+ color: var(--color-verde-oscuro);
+}
+.items-container:hover{
+    box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+}
+
+[data-animation="show"]{
+    opacity: 0;
+    transform: scale(100%);
+    transition: .6s ease-in .3s;
+
+    --opacity: 1;
+    --transform: scale(0):
+}
+
+.unset {
+    opacity: var(--opacity);
+    transform: var(--transform);
+}
+
+
+.skills{
+    width: 100%;
+    height: 200px;
+    margin-top: 90px;
+}
+.skills-container{
+    display: grid;
+    place-content: center;
+    height: 100%;
+}
+
+.cont-princ-slider {
+    height: 100px;
+    overflow: hidden;
+    width: 100%;
+  }
+  
+  .slier-prin {
+    display: inline-flex;
+    -moz-animation: slider 9s infinite linear;
+    -webkit-animation: slider 9s infinite linear;
+    animation: slider 9s infinite linear;
+    height: 100%;
+    width: auto;
+  }
+  
+  .juegos_DWG {
+    height: 100%;
+    flex: 0 0 auto;
+    text-align: center;
+    width: 150px;
+  }
+  .juegos_DWG a{
+    color: var(--color-verde-oscuro);
+    font-size: 3em;
+  }
+  @keyframes slider {
+    to {
+      -moz-transform: translateX(-50%);
+      -webkit-transform: translateX(-50%);
+      transform: translateX(-50%);
+    }
+  }
+
+
+
+.about-container{
+
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-content: center;
+}
+.about-content-items{
+
+    width: 970px;
+    height: 600px;
+    display: flex;
+}
+.text-about{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1;
+}
+.text-about h1{
+    color: var(--color-text-black);
+    font-size: 2.4em;
+    font-weight: 600;
+}
+.text-about .texto{
+    color: var(--color-text-black);
+    font-size: 18px;
+    padding: 10px;
+    border-left: solid 2px var(--color-verde-oscuro);
+    height: 100px;
+    text-align: justify;
+}
+.img-about{
+    width: 50%;
+    display: grid;
+    place-content: center;
+}
+.img-about img{
+    width: 400px;
+}
+
+
+
+.pie-pagina {
+    width: 100%;
+    bottom: 0;
+    position: relative;
+    margin-top: 800px;
+  }
+  
+  .pie-pagina .grupo-2 {
+    border-top: 2px solid var(--color-primary);
+    background-color: #fff;
+    padding: 15px 10px;
+    text-align: center;
+    color: var(--color-secondary);
+  }
+  
+  .pie-pagina .grupo-2 small {
+    font-size: 15px;
+  }
