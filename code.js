@@ -12,17 +12,17 @@ const header = `
 document.getElementById('header').innerHTML += header;
 
 const hero = `
-            <div class="text">
+           <div class="text">
                     <div class="content-tex">
                         <div class="logo">
                             <img src="lgo.png" alt="logo">
                         </div>
                         <span>Hello, I'm <strong>Alex</strong></span>
-                        <p>Programador y Desarrollador Web  apasionado por el diseño.</p>
+                        <p>Programmer and Web Developer passionate about design.</p>
                         <div class="buttons">
-                            <a href="#" class="btn">Download CV</a>
+                            <a href="https://cdn.discordapp.com/attachments/1244354279779860511/1252740941434060891/ccc.pdf?ex=6673516b&is=6671ffeb&hm=bbdb249785f0a6c2786de6c3daddb4647ad23dcbe420af60527b4f9f51bf5853&" class="btn">Download CV</a>
                         </div>
-                        <span id="locacion"> <div></div> Santo Domingo, Republica Dominicana</span>
+                        <span id="locacion"> <div></div> Santo Domingo, Dominican Republic</span>
                     </div>
                 </div>
                 <div class="redes">
@@ -32,7 +32,7 @@ const hero = `
                     <div class="item">
                         <a href="#"><i class='bx bxl-instagram-alt'></i></a>
                      </div>
-                </div>   
+                </div>     
 `;
 
 document.getElementById('hero').innerHTML += hero;
@@ -157,6 +157,11 @@ const observer = new IntersectionObserver(triggerAnimation, options);
 items.forEach(item => {
     observer.observe(item);
 });
+
+
+
+
+
 
 
 
