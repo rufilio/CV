@@ -11,16 +11,30 @@ const header = `
 
 document.getElementById('header').innerHTML += header;
 
+
+
+
+
+
+const languages = `
+   
+`;
+
+document.getElementById('languages').innerHTML += languages;
+
+
+
+
 const hero = `
            <div class="text">
                     <div class="content-tex">
                         <div class="logo">
                             <img src="lgo.png" alt="logo">
                         </div>
-                        <span>Hello, I'm <strong>Alex</strong></span>
-                        <p>Programmer and Web Developer passionate about design.</p>
+                        <span id="hola">Hello, I'm <strong>Alex</strong></span>
+                        <p id="siteContent">Programmer and Web Developer passionate about design.</p>
                         <div class="buttons">
-                            <a href="https://cdn.discordapp.com/attachments/1244354279779860511/1252740941434060891/ccc.pdf?ex=6673516b&is=6671ffeb&hm=bbdb249785f0a6c2786de6c3daddb4647ad23dcbe420af60527b4f9f51bf5853&" class="btn">Download CV</a>
+                            <a id="cvitae" href="https://cdn.discordapp.com/attachments/1244354279779860511/1252740941434060891/ccc.pdf?ex=6673516b&is=6671ffeb&hm=bbdb249785f0a6c2786de6c3daddb4647ad23dcbe420af60527b4f9f51bf5853&" class="btn">Download CV</a>
                         </div>
                         <span id="locacion"> <div></div> Santo Domingo, Dominican Republic</span>
                     </div>
@@ -42,7 +56,7 @@ document.getElementById('hero').innerHTML += hero;
 
 const Proyects = `
  <div class="tile">
-                    <h1>Proyectos</h1>
+                    <h1 id="proyectos">Proyects</h1>
                 </div>
                 <div class="content-items">
 
@@ -104,7 +118,7 @@ const Proyects = `
                           </div>
                           <div class="text">
                               <div class="title">
-                                  <h1>Centro de Noticias</h1>
+                                  <h1>Notice Center</h1>
                               </div>
                               <p>Pensado para repasar las noticias semanales sobre la politica de la nacion</p>
                               <div class="links">
@@ -208,3 +222,51 @@ let slider = document.querySelector(".slier-prin");
 slider.innerHTML += slider.innerHTML;
 
 
+
+
+
+
+// Function to change the hash value of the page and reload
+function changeLanguage(lang) {
+  location.hash = lang;
+  updateContent(lang);
+}
+
+// Function to update the content based on the hash value
+function updateContent(lang) {
+  if (lang === "es") {
+    hola.textContent = language.es.saludo;
+    siteContent.textContent = language.es.welcome;
+    cvitae.textContent = language.es.cv;
+    proyectos.textContent = language.es.proyectos;
+  } else {
+    hola.textContent = language.eng.saludo;
+    siteContent.textContent = language.eng.welcome;
+    cvitae.textContent = language.eng.cv;
+    proyectos.textContent = language.eng.proyectos;
+  }
+}
+
+// Define the language object
+let language = {
+  eng: {
+    saludo:"Hello, I'm Alex",
+    welcome: "Programmer and Web Developer passionate about design.",
+    cv: "Download CV",
+    proyectos: "Proyects"
+  },
+  es: {
+    saludo: "Hola, Soy Alex",
+    welcome: "Programador y Desarrollador Web apasionado por el diseño.",
+    cv: "Descargar CV",
+    proyectos: "Proyectos"
+  }
+};
+
+// Check if a hash value exists in the URL on page load
+window.onload = function() {
+  if (window.location.hash) {
+    let lang = window.location.hash.slice(1); // Remove the '#' from hash
+    updateContent(lang);
+  }
+};
