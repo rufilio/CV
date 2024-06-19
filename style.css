@@ -390,12 +390,14 @@ main{
     }
   }
 
-  @media (max-width: 900px) {
+  @media (max-width: 915px) {
     header{
         width: 100%;
     }
     main{
         width: 100%;
+        display: grid;
+        place-items: center;
     }
     .container-center{
         width: 100%;
@@ -406,7 +408,7 @@ main{
         height: 30%;
     }
     .hero .content-tex{
-        width: 400px;
+        width: 340px;
         text-align: center;
     }
     #locacion{
@@ -428,6 +430,10 @@ main{
 
     .skills{
         padding-top: 70px;
+    }
+    
+    .selected-language{
+      width: 100%;
     }
 
     .about-container{
