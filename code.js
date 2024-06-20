@@ -79,7 +79,8 @@ const Proyects = `
                             </div>
                             <p>HTML || JAVASCRIPT || CSS</p>
                             <div class="links">
-                                <a href=""><i class='bx bxl-github'></i></a>
+                                <a href="https://rufilio.github.io/Hanged-Game/"><i class='bx bx-right-top-arrow-circle'></i></a>
+                                <a href="https://github.com/rufilio/Hanged-Game"><i class='bx bxl-github'></i></a>
                             </div>
                         </div>
                       </div>
@@ -96,7 +97,8 @@ const Proyects = `
                               </div>
                               <p>Fue una pagina para una app de un proyecto escolar se utilizo HTML || CSS || JAVASCRIPT || FIREBASE</p>
                               <div class="links">
-                                  <a href="https://github.com/rufilio/PageWithFirebase"><i class='bx bxl-github'></i></a>
+                                  <a href="https://rufilio.github.io/Blog-With-Firebase/"><i class='bx bx-right-top-arrow-circle'></i></a>
+                                  <a href="https://github.com/rufilio/Blog-With-Firebase"><i class='bx bxl-github'></i></a>
                               </div>
                           </div>
                         </div>
@@ -113,6 +115,7 @@ const Proyects = `
                               </div>
                               <p>React</p>
                               <div class="links">
+                                  <a href=""><i class='bx bx-right-top-arrow-circle'></i></a>
                                   <a href="#"><i class='bx bxl-github'></i></a>
                               </div>
                           </div>
@@ -130,12 +133,30 @@ const Proyects = `
                               </div>
                               <p>Pensado para repasar las noticias semanales sobre la politica de la nacion</p>
                               <div class="links">
-                                  <a href="#"><i class='bx bxl-github'></i></a>
+                                  <a href="https://rufilio.github.io/Website/"><i class='bx bx-right-top-arrow-circle'></i></a>
+                                  <a href="https://github.com/rufilio/Website"><i class='bx bxl-github'></i></a>
                               </div>
                           </div>
                         </div>
                       </div>
                     
+                       <div class="items">
+                        <div class="items-container" data-animation="show">
+                          <div class="img">
+                              <img src="https://i.postimg.cc/90xcBh3j/pageQr.png" alt= "img" />
+                          </div>
+                          <div class="text">
+                              <div class="title">
+                                  <h1>QrGenerator</h1>
+                              </div>
+                              <p> HTML || CSS || JAVASCRIPT </p>
+                              <div class="links">
+                                  <a href="https://rufilio.github.io/QR-Generator-With-QRCode/"><i class='bx bx-right-top-arrow-circle'></i></a>
+                                  <a href="https://github.com/rufilio/QR-Generator-With-QRCode"><i class='bx bxl-github'></i></a>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
                       
                 </div>
 `;
